@@ -34,7 +34,7 @@
 - 支持ES6编写源码，编译生成生产代码
 - 开发(生产)环境代码自动注入页面, 专注于开发
 - 编译后的程序不依赖于外部的资源, 可自动替换线上资源地址
-- ...
+
 
 ## 模块化成果
 
@@ -49,7 +49,7 @@
 
 **下载使用**
 ```js
-git clone 
+git clone git@github.com:xiaohui108/webpack4.git
 
 cd webpack-seed
 
@@ -61,25 +61,9 @@ npm install
 npm run dev
 ```
 
-**打包(build)**
-
-* 默认情况下，该配置方案假设你的应用是被部署在一个域名的根路径上例如 https://www.my-app.com/
-* 如果应用被部署在一个子路径上，你就需要用这个选项指定这个子路径
-* 例如，如果你的应用被部署在 https://www.my-app.com/my-app/
-* 则设置 webpack的output.publicPath 为 /my-app/
-* 本项目由于需要临时部署在git-pages预览 所以改配置临时改为/webpack-seed/
-* 普通打包(大部分) npm run build 默认 '/'
-* 该命令具体请看package.json scripts命令配置
-* [配置详情](https://github.com/BiYuqi/webpack-seed/blob/master/build/config.js#L23)
-* [scripts命令配置](https://github.com/BiYuqi/webpack-seed/blob/master/package.json#L8)
-
 ```js
 // 普通打包(大部分) npm run build publicPath默认 '/'
 npm run build
-
-// 打包时 npm run build:git 该命令会打包的路径会自动带上github项目地址/webpack-seed/
-//(当发布环境不是服务器根路径，都可以采用该方案，只需更改路径名称即可，本项目二级路径为webpack-seed)
-npm run build:git
 
 ```
 **依赖分析**
@@ -97,12 +81,9 @@ npm run analyzer
 
 查看[API/README](https://github.com/BiYuqi/webpack-seed/blob/master/src/api/README.md)
 
-## 目录结构 （Source）
-
-查看[INSTRODUCTION](https://github.com/BiYuqi/webpack-seed/blob/master/INSTRODUCTION.md#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84-source)
 
 ## 输出目录 （Output）
-[查看输出](https://github.com/BiYuqi/webpack-seed/tree/gh-pages)
+[查看输出]
 * dist/
 * ---html
 * ---image
@@ -113,18 +94,4 @@ npm run analyzer
 * ---index.html
 
 > 注意：如果有音视频等，会被打包在media目录
-
-
-## TODO
-- [x] 添加ejs模板，进行页面(首尾)复用, 页面功能模板渲染
-- [x] mini-css-extract-plugin 提取js内引入scss文件失败, 打包后依然在js文件（已解决）
-- [x] 首页页面模板未完成（单独处理打包）
-- [x] 添加第三方库以链接的方式引入
-- [x] 增加ESLint代码校验
-- [x] 增加两个文件夹，一个是fix IE兼容, 一个是引入的公用库，自动加载第三方库到页面，避免手动填写
-- [x] 增加网站未登录的模板(无header,footer)
-- [x] 添加多样化layout模板支持(示例layout/layoutAuth)
-- [ ] 搭建单元测试环境(基于karma mocha chai)...
-- [ ] 添加完整网站demo示例(暂停中)
-- [ ] 添加doc使用说明以及实现思路解析
 
