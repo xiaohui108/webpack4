@@ -1,5 +1,5 @@
 
-# [Webpack-seed](https://github.com/BiYuqi/webpack-seed)
+# [Webpack-seed](https://github.com/xiaohui108/webpack4)
 
 <p align="left">
 	<a href="https://webpack.js.org/">
@@ -19,13 +19,6 @@
 
 开箱即用的多页面脚手架, 基于webpack4.2x babel7.1x模块化开发可复用的现代化网站(Without Vue Angular React)
 
-**如果感兴趣该项目, 请点个 [star](https://github.com/BiYuqi/webpack-seed/stargazers)**
-
-
-**及时关注项目更新, 请点个 [watch](https://github.com/BiYuqi/webpack-seed/watchers)**
-
-
-**项目bug, 请提 [issue](https://github.com/BiYuqi/webpack-seed/issues)**
 
 ## 特性 （Feature）
 
@@ -50,16 +43,13 @@
 页面 | 公用样式 | 当前页面私有样式| 底层核心库 | 页面公用类库 | 当前页面私有模块
 --------- | ---------- | ------ | ------ | ------ | ------
 首页 | common.css | index.css |core.js|common.js | index.js
-列表页 | common.css | list.css |core.js|common.js | list.js
-详情页 | common.css | detail.css |core.js|common.js | detail.js
-购物车 | common.css | goods.css |core.js|common.js | goods.js
 登录页 | common.css | login.css |core.js|common.js | login.js
 
 ## 使用指南 （Usage）
 
 **下载使用**
 ```js
-git clone https://github.com/BiYuqi/webpack-seed.git
+git clone 
 
 cd webpack-seed
 
@@ -138,26 +128,3 @@ npm run analyzer
 - [ ] 添加完整网站demo示例(暂停中)
 - [ ] 添加doc使用说明以及实现思路解析
 
-## LONG TODO（Base on master）
-- [ ] 建立分支web-system (后台管理系统模板)
-- [x] [web-pc](https://github.com/BiYuqi/webpack-seed/tree/web-pc) (大众网站模板)
-- [ ] web-mobile(移动端模板)
-
-## 更新日志 (Update log)
-
-查看[CHANGELOG](https://github.com/BiYuqi/webpack-seed/blob/master/CHANGELOG.md)
-
-> 本项目目前接口(axios)只能支持到IE10+, 项目本身支持IE9+
-
-## 贡献代码
-* 先 Fork (https://github.com/BiYuqi/webpack-seed/fork)
-* 创建分支 (git checkout -b my-idea)
-* 提交更改 (git commit -am 'Fixed something')
-* 推送更改 (git push origin my-idea)
-* 创建一个 Pull Request
-
-> [Pull Request使用](http://www.ruanyifeng.com/blog/2017/07/pull_request.html)
-
-## 参考（Thanks）
-
-本脚手架开发中，ejs模板渲染实现这块参考了[webpack-seed](https://github.com/Array-Huang/webpack-seed), 特此备注
