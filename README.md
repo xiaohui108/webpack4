@@ -75,11 +75,11 @@ npm run analyzer
 
 ## 开发规范 （Standard）
 
-查看[INSTRODUCTION](https://github.com/BiYuqi/webpack-seed/blob/master/INSTRODUCTION.md)
+查看[INSTRODUCTION](https://github.com/xiaohui108/webpack4/blob/master/INSTRODUCTION.md)
 
 ## 接口配置 （Api Setting）
 
-查看[API/README](https://github.com/BiYuqi/webpack-seed/blob/master/src/api/README.md)
+查看[API/README](https://github.com/xiaohui108/webpack4/blob/master/src/api/README.md)
 
 
 ## 输出目录 （Output）
